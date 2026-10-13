@@ -105,9 +105,12 @@
     modal.classList.toggle("is-sold", !!p.vendido);
     if (!modal.open) {
       modal.showModal();
+      // Foco en la ficha (no en la ×), así Safari no muestra el anillo azul al abrir
+      modal.focus();
       document.documentElement.classList.add("no-scroll");
     }
     setPhotos(p.fotos || [], p.nombre);
+    modal.scrollTop = 0;
   }
 
   function close() {
