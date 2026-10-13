@@ -32,7 +32,7 @@ const PRODUCTOS = [
       "img/productos/banca-perjohan/4.jpg",
     ],
     contacto: "vicente",
-    vendido: false,
+    vendido: true,
   },
   {
     id: "set-cubiertos",
@@ -146,6 +146,6 @@ const PRODUCTOS = [
       "img/productos/mueble-hyllis/2.jpg",
     ],
     contacto: "vicente",
-    vendido: false,
+    vendido: true,
   },
 ];
