@@ -114,7 +114,7 @@ const PRODUCTOS = [
       "img/productos/piso-kyrre/2.jpg",
     ],
     contacto: "vicente",
-    vendido: false,
+    vendido: true,
   },
   {
     id: "mesa-gladom",
