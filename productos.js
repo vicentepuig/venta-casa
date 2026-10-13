@@ -132,4 +132,20 @@ const PRODUCTOS = [
     contacto: "vicente",
     vendido: false,
   },
+  {
+    id: "mueble-hyllis",
+    nombre: "Mueble HYLLIS",
+    marca: "IKEA",
+    precio: 8000,
+    descripcion: "Pintado burdeo.",
+    medidas: "",
+    estado: "",
+    entrega: "Retiro en Providencia",
+    fotos: [
+      "img/productos/mueble-hyllis/1.jpg",
+      "img/productos/mueble-hyllis/2.jpg",
+    ],
+    contacto: "vicente",
+    vendido: false,
+  },
 ];
