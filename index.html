@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Venta de cosas</title>
+  <meta name="description" content="Venta de Ignacio y Vicente: cosas de nuestros hogares por mudanza y renovación.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=16">
+</head>
+<body>
+  <header class="hero">
+    <p class="hero__byline">Venta de Ignacio y Vicente</p>
+
+    <img class="deco deco--mesa" src="img/hero/mesa.png" alt="">
+    <img class="deco deco--banco" src="img/hero/banco.png" alt="">
+
+    <h1 class="hero__title">Venta de<br>cosas</h1>
+    <img class="deco deco--tenedor" src="img/hero/tenedor.png" alt="">
+
+    <p class="hero__lead">Estamos vendiendo algunas cositas de nuestros hogares por mudanza y renovación.</p>
+
+    <section class="how">
+      <h2 class="how__title">¿Cómo funciona?</h2>
+      <p class="how__text">Este catálogo te permitirá contactarnos de inmediato por WhatsApp si estás interesado en algo. Al hacer click en un producto, podrás revisar sus detalles y contactarnos para coordinar la compra y entrega.</p>
+    </section>
+
+    <a class="hero__more" href="#catalogo">Pasa a mirar<span aria-hidden="true">↓</span></a>
+  </header>
+
+  <main id="catalogo" class="grid" aria-label="Productos"></main>
+
+  <footer class="end">
+    <a class="end__arrow" href="#" aria-label="Volver arriba">↑</a>
+    <p class="end__text">Nada más por ahora :)</p>
+  </footer>
+
+  <dialog class="modal" id="modal" aria-labelledby="modal-title">
+    <button class="modal__close" type="button" aria-label="Cerrar">×</button>
+    <div class="carousel" id="carousel">
+      <div class="carousel__track" id="carousel-track"></div>
+      <button class="carousel__nav carousel__nav--prev" type="button" aria-label="Foto anterior">←</button>
+      <button class="carousel__nav carousel__nav--next" type="button" aria-label="Foto siguiente">→</button>
+      <div class="carousel__dots" id="carousel-dots"></div>
+    </div>
+    <div class="modal__info">
+      <p class="modal__brand" id="modal-brand"></p>
+      <h2 class="modal__title" id="modal-title"></h2>
+      <p class="modal__price" id="modal-price"></p>
+      <p class="modal__desc" id="modal-desc"></p>
+      <dl class="modal__details" id="modal-details"></dl>
+      <div class="modal__spacer"></div>
+      <a class="btn" id="modal-cta" target="_blank" rel="noopener">Contactar por WhatsApp</a>
+    </div>
+  </dialog>
+
+  <script src="productos.js?v=16"></script>
+  <script src="app.js?v=16"></script>
+</body>
+</html>
